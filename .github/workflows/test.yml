@@ -1,0 +1,21 @@
+name: Install test
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-15-intel, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Install from this tap
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv 2>/dev/null || true)"
+          brew tap gregorybolshakov/tap
+          brew install gregorybolshakov/tap/peekme
+          peekme --version
+          peekme --help | head -3
