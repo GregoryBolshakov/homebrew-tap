@@ -1,25 +1,25 @@
 class Peekme < Formula
   desc "Select text in Codex CLI or Claude Code output and get a short explanation right under it, inside the terminal"
   homepage "https://github.com/GregoryBolshakov/peekme"
-  version "0.2.1"
+  version "0.2.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.1/peekme-aarch64-apple-darwin.tar.xz"
-      sha256 "37d8b48a1462de8e77f21ae2af17265090e4e60054f3604b4e917414de29ca66"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.2/peekme-aarch64-apple-darwin.tar.xz"
+      sha256 "b4235ada334685474e0271fadc82ab04505565bb4a6b50d1db8e51f4692ade1f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.1/peekme-x86_64-apple-darwin.tar.xz"
-      sha256 "60140cbd41ef6a362c57c9c27537172a893eff9a3e152700a1df0228bf4845c2"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.2/peekme-x86_64-apple-darwin.tar.xz"
+      sha256 "0950cfbc39225cf01f1161d145927d991ab9340e48f09a46673dd3ec0f1571da"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.1/peekme-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "db8d5982dd161e5d7eb014b352133780a2ace9150906d1df78ebe1bb56bc1d0a"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.2/peekme-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c412017696776987c03e626384e999568caba3bd41776d92e7cd09711cfc75ce"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.1/peekme-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "07eb3aa9bd950642d7757f5d5071ef55ec664bca3472b263e23139674806460a"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.2/peekme-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a105ff0f0515ca9cc721652d349bfc87028c3972ea86a7c7354ee9ec6416eba1"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
