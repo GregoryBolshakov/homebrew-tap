@@ -1,25 +1,25 @@
 class Peekme < Formula
-  desc "Select text in Codex CLI or Claude Code output and get a short explanation right under it, inside the terminal"
+  desc "Select text in Codex CLI, Claude Code or GitHub Copilot CLI output and get a short explanation right under it, inside the terminal"
   homepage "https://github.com/GregoryBolshakov/peekme"
-  version "0.2.3"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.3/peekme-aarch64-apple-darwin.tar.xz"
-      sha256 "f3bb9b354f4eab987d0b138b717f04eeb2a904339f4b927de782553d793b790f"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.3.0/peekme-aarch64-apple-darwin.tar.xz"
+      sha256 "3e2366e546ed464027a9ff7c8903b18b6114d1f5b79762fb869f4289d42cdabd"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.3/peekme-x86_64-apple-darwin.tar.xz"
-      sha256 "425b0c0b7c22a7909c68512207a0df097ce04e821a36dc40c3c822628cf231fb"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.3.0/peekme-x86_64-apple-darwin.tar.xz"
+      sha256 "e4eebd782e574beb5876d792439585ef77142b5c7e07e08351d363d2250d79c0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.3/peekme-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "90bf6e8e69ba0a1c183100ec8d7abfa9bafafc288030ff83c08174f5dbaf8f44"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.3.0/peekme-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b81dc7865f825164592bdf72c0353c771406d9ba71cbb903fdd79111912fb1d5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.2.3/peekme-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "71ad8877f576d6275eb22f03d8aff9ad6e14e2216cea86044dd8898e0b660ef9"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.3.0/peekme-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ad6ef75ca328b6fdb3b8804dc72313c0ae60263e3386307c870d27cfaeca018a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
