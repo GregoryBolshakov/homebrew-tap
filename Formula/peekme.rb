@@ -1,25 +1,25 @@
 class Peekme < Formula
   desc "Select text in Claude Code, Codex CLI, GitHub Copilot CLI or Kiro CLI output and get a short explanation right under it, inside the terminal"
   homepage "https://peekme.dev"
-  version "0.5.2"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.5.2/peekme-aarch64-apple-darwin.tar.xz"
-      sha256 "09ca38af2f761165059866cc1c827751d0bf162884c7f02a5d0f6b2052587e78"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-aarch64-apple-darwin.tar.xz"
+      sha256 "400b7be7f8740b2527dc5252763d919a44712a79c1ec12f62a04499ad7580688"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.5.2/peekme-x86_64-apple-darwin.tar.xz"
-      sha256 "0401d87db703186e0a89df3b378fe3992e43c57a80d3644f8485d596f08f6601"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-x86_64-apple-darwin.tar.xz"
+      sha256 "a126db915cc550233decc3b2f20b8cb4242be93770b033e8431030d7a289dd61"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.5.2/peekme-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "bf75b00e9d2478ab217d0dfb465b7823807fccb1d7113ac1ce50f1b6c6fc6978"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f895543728ef9406e6fc1dbebed5f28893e1a038d74461be8c1f83671de2fc58"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.5.2/peekme-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f621c048e216e1663c63f22cffcc13c51a40f9ca3fcfbd9613896bc504e11c33"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5c4bfe7cb26408b67b72e1d79da9fbb1bab338727271287ef68179ff598da3db"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
