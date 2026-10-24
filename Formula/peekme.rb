@@ -1,25 +1,25 @@
 class Peekme < Formula
-  desc "Select text in Claude Code, Codex CLI, GitHub Copilot CLI or Kiro CLI output and get a short explanation right under it, inside the terminal"
+  desc "Select text in Claude Code, Codex CLI, Pi, GitHub Copilot CLI or Kiro CLI output and get a short explanation right under it, inside the terminal"
   homepage "https://peekme.dev"
-  version "0.6.0"
+  version "0.7.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-aarch64-apple-darwin.tar.xz"
-      sha256 "400b7be7f8740b2527dc5252763d919a44712a79c1ec12f62a04499ad7580688"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.7.0/peekme-aarch64-apple-darwin.tar.xz"
+      sha256 "d51a04081471c0fb1cd47497de8c5a15cbda22fff75e7d5b7da22a016f2e5502"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-x86_64-apple-darwin.tar.xz"
-      sha256 "a126db915cc550233decc3b2f20b8cb4242be93770b033e8431030d7a289dd61"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.7.0/peekme-x86_64-apple-darwin.tar.xz"
+      sha256 "2c79e0fe16ca1f991616e08add0abd8d078c7eb90f8a97c43e39e3d10eb41b87"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f895543728ef9406e6fc1dbebed5f28893e1a038d74461be8c1f83671de2fc58"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.7.0/peekme-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "8b8f935fd90cff32dd340303908a59063353eee648b153d6daca66c723fbeb57"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.6.0/peekme-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "5c4bfe7cb26408b67b72e1d79da9fbb1bab338727271287ef68179ff598da3db"
+      url "https://github.com/GregoryBolshakov/peekme/releases/download/v0.7.0/peekme-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "60191a0d48d8f3e5393a57817a0274b329d55d031136408e08415d7b9a218ef7"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
